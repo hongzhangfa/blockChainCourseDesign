@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="web3.min.js"></script>
+
+    <link rel="stylesheet" href="app.css" />
+
+</head>
+
+<body>
+
+<div class="title">
+<h2>  <b>基于区块链的精准扶贫信息管理系统 Demo </b>
+</h2>
+</div>
+    <h3>CurrentAccount: <span class="showAccount"></span></h3>
+
+    <hr>
+    <input type="text" id="_admin">
+    <button class="setPAManager">setPAManager</button>
+    <img id="load_ci_img" src="./images/loading-upload.gif" alt="" hidden>
+    <button class="getPAManager">getPAManager</button>
+    <h3><span class="txt_setPAManager"></span></h3>
+    <h3>PAManager: <span class="showPAManager"></span></h3>
+    <hr>
+
+    Receiver: <input type="text" id="_to">
+    Amount: <input type="text" id="_amount">
+    <button class="transfer">transfer</button>
+    <img id="load_img2" src="./images/loading-upload.gif" alt="" hidden>
+    <h3><span class="txt_transfer"></span></h3>
+
+    <h3>transactionHash: <span class="transactionHash"></span></h3>
+    <h3>blockNumber: <span class="blockNumber"></span></h3>
+    <h3>blockHash: <span class="blockHash"></span></h3>
+    <h3>fromAddress: <span class="from"></span></h3>
+    <hr>
+
+
+    HelpOrganizers: <input type="text" id="txt_approve">
+    Value: <input type="text" id="txt_approveValue">
+    <button class="approve">approve</button>
+    <img id="load_img3" src="./images/loading-upload.gif" alt="" hidden>
+    <h3><span class="showApprove"></span></h3>
+    <hr>
+
+    <input type="text" id="_balanceOf">
+    <button class="getBalance">getBalance</button>
+
+    <input type="text" id="txt_Poor">
+    <button class="getPoorAmount">getPoorAmount</button>
+
+    <input type="text" id="txt_auth">
+    <button class="getAuthAmount">getAuthAmount</button>
+
+    <h4>getBalance: <span class="showBalance"></span></h4>
+    <h4>PoorAmount: <span class="showPoorAmount"></span></h4>
+    <h4>AuthAmount: <span class="showAuthAmount"></span></h4>
+
+    <hr>
+
+   
+ 
+
+    FromHelper: <input type="text" id="_from">
+    Receiver: <input type="text" id="_receiver">
+    Amount: <input type="text" id="_value">
+    <button class="transferFromAuth">transferFromAuth</button>
+    <img id="load_img4" src="./images/loading-upload.gif" alt="" hidden>
+    <h3><span class="txt_transferFromAuth"></span></h3>
+
+    <h3>transactionHash: <span class="s-transactionHash"></span></h3>
+    <h3>blockNumber: <span class="s-blockNumber"></span></h3>
+    <h3>blockHash: <span class="s-blockHash"></span></h3>
+    <h3>fromAddress: <span class="s-from"></span></h3>
+    <hr>
+
+    <input type="text" id="txt_AuthAmountTo">
+    <button class="getAuthAmountTo">getAuthAmountTo</button>
+    <div class="showAuthAmountTo"></div>
+    <hr>
+
+    <input type="text" id="txt_PoorTract">
+    <button class="getPoorTract">getPoorTract</button>
+    <h4>PoorTract: <span class="showPoorTract"></span></h4>
+    <hr>
+
+    <input type="text" id="txt_id">
+    <button class="getRescueCasesById">getRescueCasesById</button>
+    <div class="showRescueCasesById">
+        <h4>HelpOrganizers: <span class="helper"></span></h4>
+        <h4>Recipient: <span class="recipient"></span></h4>
+        <h4>Amount: <span class="amount"></span></h4>
+        <h4>Count: <span class="count"></span></h4>
+    </div>
+    <hr>
+
+    <button class="getAllDonate">getAllDonateConut</button>
+    <h4>getAllDonate: <span class="showAllDonate"></span></h4>
+
+    <button class="getDonateAmount">getDonateAmount</button>
+    <h4>DonateAmount: <span class="showDonateAmount"></span></h4>
+    <hr>
+
+  <div>
+      <h4>Event Logging</h4>
+    <button class="getEventTansfer">getEventTansfer</button>
+    <div class="showEventTansfer"></div>
+
+
+    <button class="getEventApproval">getEventApproval</button>
+    <div class="showEventApproval"></div>
+    <hr>
+
+  </div>
+
+    <!-- <script type="text/javascript" src="app.js"></script> -->
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
